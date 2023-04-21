@@ -1,0 +1,3 @@
+OrderNumber,ClientName,ProductName,ProductType,UnitPrice,ProductQuantity,TotalPrice,Currency,DeliveryAddress,DeliveryCity,DeliveryPostcode,DeliveryCountry,DeliveryContactNumber,PaymentType,PaymentBillingCode,PaymentDate
+PO0060504-64,Howell LLC,Bamboo Flute,Woodwind,60,1,60,GBP,91 Buckingham Rd,Grimsby,DN37 9TS,UNITED KINGDOM,+44 GOLMAAL,Credit,PO0087294-20210317,4/17/2021
+PO0097299-65,Zemlak LTD,Bamboo Flute,Woodwind,60,7,420,GBP,3246 Gambler Lane,NORTH LONDON,N61 3FK,United Kingdom,+44 HERA PHERI,Credit,PO0097299-20210303,4/3/2021

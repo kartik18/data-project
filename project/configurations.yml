@@ -1,0 +1,93 @@
+tables:
+  - orders_fact:
+      - file_column: OrderNumber
+        table_mapped_column: order_number
+        type: ALPHANUMERIC
+        validations: NULL_CHECK, DUPLICATE_CHECK
+    
+      - file_column: ClientName
+        table_mapped_column: client_name
+        type: TEXT
+        validations: NULL_CHECK
+
+      - file_column: ProductName
+        table_mapped_column: product_name
+        type: TEXT
+        validations: NULL_CHECK
+
+      - file_column: ProductType
+        table_mapped_column: product_type
+        type: TEXT
+        validations: NULL_CHECK
+
+      - file_column: UnitPrice
+        table_mapped_column: unit_price
+        type: REAL # CHECK
+        validations: NULL_CHECK, # CHECK availability of strings
+
+      - file_column: ProductQuantity
+        table_mapped_column: product_quantity
+        type: INTEGER # CHECK
+        validations: NULL_CHECK,  
+
+      - file_column: TotalPrice
+        table_mapped_column: total_price
+        type: REAL # CHECK
+        validations: NULL_CHECK
+
+      - file_column: Currency
+        table_mapped_column: currency
+        type: TEXT
+        validations: NULL_CHECK
+
+      - file_column: PaymentType
+        table_mapped_column: payment_type
+        type: TEXT
+        validations: NULL_CHECK
+
+      - file_column: PaymentBillingCode
+        table_mapped_column: payment_billing_code
+        type: ALPHANUMERIC
+        validations: NULL_CHECK
+
+      - file_column: PaymentDate
+        table_mapped_column: payment_date
+        type: DATE
+        validations: NULL_CHECK  
+
+  - stg_client_dim:      
+      - file_column: ClientName
+        table_mapped_column: client_name
+        type: TEXT
+        validations: NULL_CHECK 
+
+      - file_column: DeliveryAddress
+        table_mapped_column: delivery_address
+        type: TEXT
+        validations: NULL_CHECK  
+
+      - file_column: DeliveryCity
+        table_mapped_column: delivery_city
+        type: TEXT
+        validations: NULL_CHECK
+
+      - file_column: DeliveryPostcode
+        table_mapped_column: delivery_postcode
+        type: TEXT
+        validations: NULL_CHECK
+
+      - file_column: DeliveryCountry
+        table_mapped_column: delivery_country
+        type: TEXT
+        validations: NULL_CHECK 
+
+      - file_column: DeliveryContactNumber
+        table_mapped_column: delivery_contact_number
+        type: TEXT
+
+      - file_column: PaymentDate
+        table_mapped_column: payment_date
+        type: DATE
+        validations: NULL_CHECK          
+      
+
