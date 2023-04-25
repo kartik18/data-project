@@ -1,7 +1,9 @@
 import yaml
-
+import os
+print(os.getcwd())
+# YML Parser
 def get_tables():
-    with open('configurations.yml', 'r') as f:
+    with open('project/configurations.yml', 'r') as f:
         data = yaml.safe_load(f)
 
     tables = {}
